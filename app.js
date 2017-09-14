@@ -28,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //body parser
 app.use(bodyParser.json());
 
+// Passport Middleware
 app.use(passport.initialize());
 app.use(passport.session());
 
