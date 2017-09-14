@@ -1,0 +1,25 @@
+{
+  "name": "MEAN",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongodb": "^2.2.31",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*",
+    "pause": "^0.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
