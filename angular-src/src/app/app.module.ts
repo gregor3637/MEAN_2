@@ -1,11 +1,13 @@
 import { Router, RouterModule, Routes } from "@angular/router";
 
 import { AppComponent } from './app.component';
+import { AuthService } from './services/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FlashMessagesModule } from 'angular2-flash-messages'
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
+import { HttpModule } from '@angular/http';
 import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgModule } from '@angular/core';
@@ -33,11 +35,12 @@ const appRoutes:Routes = [
   ],
   imports: [
     FlashMessagesModule,
+    HttpModule,
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [ValidateService],
+  providers: [ValidateService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
